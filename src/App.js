@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import MySkills from './components/MySkills';
 import LayoutView from './layout/LayoutView';
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<LayoutView/>}>
-          <Route index element={<Home/>}/>
-          <Route path='/login' element={<Login/>}/>
+          <Route index element={<Dashboard/>}/>
+          <Route path='/myskills' element={<MySkills/>}/>
         </Route>
       </Routes>
     </div>

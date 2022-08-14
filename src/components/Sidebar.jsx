@@ -3,12 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className='sidebar'>
+      <img className='larnu-logo' src='bootcamp.png'></img>
       <NavLink to='/'>
-        Home
+        Dashboard
       </NavLink>
-      <NavLink to='/login'>
-        Login
+      <NavLink to='/myskills'>
+        My Skills
       </NavLink>
     </div>
   )
