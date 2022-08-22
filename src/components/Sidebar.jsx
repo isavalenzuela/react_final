@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <img className='larnu-logo' src='bootcamp.png'></img>
+      <img className='larnu-logo' src='bootcamp.png' alt='logo'></img>
       <NavLink to='/'>
         Dashboard
       </NavLink>
