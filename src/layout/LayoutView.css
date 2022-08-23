@@ -6,7 +6,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   padding: 50px;
   gap: 20px;
   flex-wrap: wrap;
@@ -18,8 +18,8 @@
 .dashboard, .myskills {
 /*   display: flex;
   flex-direction: column; */
-  height: 100vh;
-  width: calc(100% - 50vw);
+  height: calc(100vh - 100px);
+  width: calc(100% - 40vw);
   padding: 50px;
   gap: 20px;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
 .todos {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 20vw;
   padding: 50px;
   gap: 20px;
   flex-wrap: wrap;
@@ -52,7 +52,7 @@
   flex-wrap: wrap;
   align-content: center;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .about-me {
@@ -62,6 +62,7 @@
   align-content: center;
   align-items: center;
   gap: 10px;
+  max-height: 300px;
 }
 
 .about-me--container {
@@ -71,6 +72,7 @@
   align-content: flex-start;
   justify-content: center;
   align-items: flex-start;
+  padding: 20px;
 }
 
 .about-me--photo {
@@ -80,5 +82,82 @@
 }
 
 .about-me--desc {
+  font-size: 14px;
+  margin-top: 50px;
+  text-align: justify;
+}
 
+.my-projects {
+  margin-top: 100px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 15rem;
+  max-height: 20rem;
+  text-align: center;
+  border-radius: 10%;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  margin: 16px
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1115px) {
+  .about-me {
+    display: flex ;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 300px;
+  }
+
+  .about-me--desc {
+    margin-top: 0px;
+    text-align: justify;
+  }
+
+  .about-me--container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .my-projects {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .about-me {
+    display: flex ;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+    max-height: 300px;
+  }
+
+  .about-me--desc {
+    margin-top: 0px;
+    text-align: justify;
+  }
+
+  .about-me--container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .my-projects {
+    padding-top: 150px;
+  }
 }

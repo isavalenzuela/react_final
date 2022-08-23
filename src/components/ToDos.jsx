@@ -2,7 +2,9 @@ import React from 'react'
 
 const ToDos = () => {
   return (
-    <div className='todos'>ToDos</div>
+    <div className='todos'>
+      <h3>ToDos</h3>
+    </div>
   )
 }
 

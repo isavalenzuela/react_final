@@ -22,7 +22,7 @@ const Dashboard = () => {
             <h3>About me</h3>
             <img className='about-me--photo' src="foto.jpeg" alt="" />
           </div>
-          <div className='about-me-desc'>My name is Camila Isadora Valenzuela Fierro
+          <div className='about-me--desc'>My name is Camila Isadora Valenzuela Fierro
             and I'm a software engineer student, cat mom and coffee lover.
             I'm also a sociologist and as such, I believe we
             learn and work better when we make connections with others.
@@ -32,9 +32,6 @@ const Dashboard = () => {
         </div>
         <div className='my-projects'>
           <h3>My Projects</h3>
-          <div>Test</div>
-          <div>Test</div>
-          <div>Test</div>
         </div>
       </div>
     </div>
