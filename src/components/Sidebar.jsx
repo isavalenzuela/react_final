@@ -5,10 +5,10 @@ const Sidebar = () => {
   return (
     <div className='sidebar'>
       <img className='larnu-logo' src='bootcamp.png' alt='logo'></img>
-      <NavLink to='/'>
+      <NavLink to='/' className="sidebar-link">
         Dashboard
       </NavLink>
-      <NavLink to='/myskills'>
+      <NavLink to='/myskills' className="sidebar-link">
         My Skills
       </NavLink>
     </div>
