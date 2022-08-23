@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
-import { fetchVercelProjects } from './../services/useAxios'
+import React, { useEffect, useState } from 'react'
+import MyProjects from './MyProjects'
+import { fetchVercelProjects } from './../services/getProjects'
 
 const Dashboard = () => {
 
+  const [projects, updateProjects] = useState([]);
   useEffect(() => {
     const startFetch = async () => {
       let vercelResponse = await fetchVercelProjects();
@@ -10,6 +12,7 @@ const Dashboard = () => {
     }
     startFetch();
   }, [])
+
 
 
   return (
@@ -32,6 +35,15 @@ const Dashboard = () => {
         </div>
         <div className='my-projects'>
           <h3>My Projects</h3>
+          <div>
+            {projects.map(project => {
+              return <MyProjects
+                name={project.name}
+                deployLink={project.alias}
+              />
+            })
+            }
+          </div>
         </div>
       </div>
     </div>
