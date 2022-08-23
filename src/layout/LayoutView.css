@@ -34,13 +34,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.dashboard, .myskills {
-/*   display: flex;
-  flex-direction: column; */
+.dashboard {
   height: calc(100vh - 100px);
-  width: calc(100% - 40vw);
-  padding: 50px;
   gap: 20px;
+  padding: 50px;
+}
+
+.myskills {
+  height: calc(100vh - 20px);
+  padding: 10px 50px;
+  align-self: center;
+}
+
+.dashboard, .myskills {
+  width: calc(100% - 40vw);
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
