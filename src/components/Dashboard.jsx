@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import MyProjects from './MyProjects'
+import MyProject from './MyProject'
 import { fetchVercelProjects } from './../services/getProjects'
 
 const Dashboard = () => {
 
-  const [projects, updateProjects] = useState([]);
+  const [projects, setProjects] = useState([]);
   useEffect(() => {
-    const startFetch = async () => {
-      let vercelResponse = await fetchVercelProjects();
-      console.log(vercelResponse);
-    }
+
     startFetch();
   }, [])
 
-
+  const startFetch = async () => {
+    const vercelProjects = await fetchVercelProjects();
+    console.log(vercelProjects);
+    setProjects(vercelProjects);
+  }
 
   return (
     <div className='dashboard'>
@@ -35,13 +36,14 @@ const Dashboard = () => {
         </div>
         <div className='my-projects'>
           <h3>My Projects</h3>
-          <div>
-            {projects.map(project => {
-              return <MyProjects
-                name={project.name}
-                deployLink={project.alias}
-              />
-            })
+          <div className='my-projects-cards'>
+            {
+              projects.map(project => {
+                return <MyProject
+                  name={project.name}
+                  deployLink={project.alias}
+                />
+              })
             }
           </div>
         </div>

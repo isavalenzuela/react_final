@@ -10,15 +10,12 @@ let config = {
     Authorization: 'Bearer ' + vercelToken,
   },
 };
-let results = [];
+
 
 export const fetchVercelProjects = () => {
   return new Promise((resolve, reject) => {
     axios(config).then(function (response) {
-      if (results.length === 0) {
-        results.push(...response.data.projects);
-        resolve(results);
-      }
+      resolve(response.data.projects)
     })
       .catch(function (error) {
         reject(error)
