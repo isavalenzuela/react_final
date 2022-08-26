@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import MyProject from './MyProject'
-import { fetchVercelProjects } from './../services/getProjects'
+
+import { fetchVercelProjects } from '../services/getProjects'
+import MyProject from './MyProject';
 
 const Dashboard = () => {
 
