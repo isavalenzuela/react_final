@@ -1,6 +1,5 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
-import ToDos from '../components/ToDos';
 import Sidebar from '../components/Sidebar';
 import './LayoutView.css';
 
@@ -9,7 +8,6 @@ const LayoutView = () => {
     <div className='main'>
       <Sidebar />
       <Outlet />
-      <ToDos />
     </div>
   )
 }

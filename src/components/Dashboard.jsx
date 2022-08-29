@@ -6,8 +6,8 @@ import MyProject from './MyProject';
 const Dashboard = () => {
 
   const [projects, setProjects] = useState([]);
-  useEffect(() => {
 
+  useEffect(() => {
     startFetch();
   }, [])
 
@@ -20,8 +20,7 @@ const Dashboard = () => {
   return (
     <div className='dashboard'>
       <div className='dashboard-main'>
-        <h3>Hello, I'm Isa</h3>
-        <p>This is the final project for ReactJS module</p>
+        <h1>Hello, I'm Isa</h1>
         <div className='about-me'>
           <div className='about-me--container'>
             <h3>About me</h3>

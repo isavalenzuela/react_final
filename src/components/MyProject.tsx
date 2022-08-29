@@ -3,14 +3,18 @@ import React from 'react'
 type Props = {
   name: string,
   deployLink: any,
+  latestDeployments: any,
+  alias: any,
 }
 
-const MyProject = ({ name, deployLink }: Props) => {
+const MyProject = ({ name, deployLink, latestDeployments, alias }: Props) => {
   return (
     <div className="card">
-      <h3 className="card__title">{name}</h3>
-      <button className="card__button" onClick={deployLink}>Deploy en Vercel</button>
-    </div>
+      <p className="card__title">{name}</p>
+      <a href={'https://www.vercel.com'} target="_blank" rel="noreferrer">
+        <button className="card__button" onClick={deployLink}>Deploy en Vercel</button>
+      </a>
+    </div >
   )
 }
 
