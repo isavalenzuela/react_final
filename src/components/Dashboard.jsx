@@ -1,21 +1,6 @@
-import React, { useEffect, useState } from 'react'
-
-import { fetchVercelProjects } from '../services/getProjects'
-import MyCard from './MyCard';
+import React from 'react'
 
 const Dashboard = () => {
-
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    startFetch();
-  }, [])
-
-  const startFetch = async () => {
-    const vercelProjects = await fetchVercelProjects();
-    console.log(vercelProjects);
-    setProjects(vercelProjects);
-  }
 
   return (
     <div className='dashboard'>
@@ -30,22 +15,8 @@ const Dashboard = () => {
             and I'm a software engineer student, cat mom and coffee lover.
             I'm also a sociologist and as such, I believe we
             learn and work better when we make connections with others.
-
           </div>
           <div>This section is under construction 🛠</div>
-        </div>
-        <div className='my-projects'>
-          <h3>My Projects</h3>
-          <div className='my-projects-cards'>
-            {
-              projects.map(project => {
-                return <MyCard
-                  name={project.name}
-                  deployLink={project.alias}
-                />
-              })
-            }
-          </div>
         </div>
       </div>
     </div>
