@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import MySkills from './components/MySkills';
+import MyProjects from './components/MyProjects';
 import LayoutView from './layout/LayoutView';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Route path='/' element={<LayoutView/>}>
           <Route index element={<Dashboard/>}/>
           <Route path='/myskills' element={<MySkills/>}/>
+          <Route path='/myprojects' element={<MyProjects/>}/>
         </Route>
       </Routes>
     </div>

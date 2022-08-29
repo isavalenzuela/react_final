@@ -7,7 +7,7 @@ type Props = {
   alias: any,
 }
 
-const MyProject = ({ name, deployLink, latestDeployments, alias }: Props) => {
+const MyCard = ({ name, deployLink, latestDeployments, alias }: Props) => {
   return (
     <div className="card">
       <p className="card__title">{name}</p>
@@ -18,4 +18,4 @@ const MyProject = ({ name, deployLink, latestDeployments, alias }: Props) => {
   )
 }
 
-export default MyProject
+export default MyCard

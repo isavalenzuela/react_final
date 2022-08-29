@@ -8,6 +8,9 @@ const Sidebar = () => {
       <NavLink to='/' className="sidebar-link">
         Dashboard
       </NavLink>
+      <NavLink to='/myprojects' className="sidebar-link">
+        My Projects
+      </NavLink>
       <NavLink to='/myskills' className="sidebar-link">
         My Skills
       </NavLink>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { fetchVercelProjects } from '../services/getProjects'
-import MyProject from './MyProject';
+import MyCard from './MyCard';
 
 const Dashboard = () => {
 
@@ -39,7 +39,7 @@ const Dashboard = () => {
           <div className='my-projects-cards'>
             {
               projects.map(project => {
-                return <MyProject
+                return <MyCard
                   name={project.name}
                   deployLink={project.alias}
                 />

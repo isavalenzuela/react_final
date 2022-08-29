@@ -35,19 +35,19 @@
 }
 
 .dashboard {
-  height: 100vh;
-  /* max-height: calc(100vh - 100px); */
+  /* height: 100vh; */
+  max-height: calc(100vh - 100px);
   gap: 20px;
   padding: 50px;
 }
 
-.myskills {
+.myskills, .myprojects {
   height: calc(100vh - 20px);
   padding: 10px 50px;
   align-self: center;
 }
 
-.dashboard, .myskills {
+.dashboard, .myskills, .myprojects {
   width: calc(100% - 40vw);
   flex-wrap: wrap;
   align-content: center;
