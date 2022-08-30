@@ -3,7 +3,6 @@ import Dashboard from '../components/Dashboard';
 import Sidebar from '../components/Sidebar';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import '@testing-library/jest-dom/extend-expect';
 
 test('Renders main page correctly', () => {
     expect(true).toBeTruthy();
@@ -14,7 +13,9 @@ test('renders sidebar item Dashboard', () => {
     <BrowserRouter>
       <Sidebar />
     </BrowserRouter>);
-  expect(screen.getAllByRole("link")).toHaveTextContent(/Dashboard/);
+  console.log(screen.getAllByRole("link")[0].textContent);
+  expect(screen.getByText('Dashboard')).toBeInTheDocument();
+ //expect(screen.getAllByRole("link"))
 });
 
 test('renders h1 text at Dashboard', () => {

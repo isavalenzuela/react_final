@@ -18,7 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --watchAll --verbose --coverage",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!@codemirror)/'",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .tsx"
   },
@@ -27,13 +27,6 @@
       "react-app",
       "react-app/jest"
     ]
-  },
-  "jest": {
-    "testEnvironment": "jsdom",
-    "transform": {
-      "^.+\\.js?$": "ts-jest",
-      ".+\\.(css|styl|less|sass|scss)$": "<rootDir>/node_modules/jest-css-modules-transform"
-    }
   },
   "browserslist": {
     "production": [
@@ -71,14 +64,12 @@
   "babel": {
     "presets": [
       "@babel/react",
-      "@babel/env"
+      "@babel/env",
+      "@babel/preset-react"
     ],
     "plugins": [
       "@babel/proposal-class-properties",
       "@babel/plugin-transform-runtime"
     ]
-  },
-  "presets": [
-    "@babel/preset-react"
-  ]
+  }
 }
