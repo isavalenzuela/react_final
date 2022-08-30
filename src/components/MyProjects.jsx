@@ -22,10 +22,12 @@ const MyProjects = () => {
       <div className='myprojects-cards'>
         {
           projects.map(project => {
-            return <MyCard
-              name={project.name}
-              deployLink={project.alias}
-            />
+            return (<div key={project.id}>
+              <MyCard
+                name={project.name}
+                deployLink={project.alias}
+              />
+            </div>)
           })
         }
       </div>

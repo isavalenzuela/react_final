@@ -1,9 +1,10 @@
-import './App.css';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import MySkills from './components/MySkills';
 import MyProjects from './components/MyProjects';
 import LayoutView from './layout/LayoutView';
+import './App.css';
 
 function App() {
   return (
