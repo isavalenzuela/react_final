@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 type Props = {
   name: string,
   deployLink: any,
   latestDeployments: any,
   alias: any,
-}
+};
 
 const MyCard = ({ name, deployLink, latestDeployments, alias }: Props) => {
   return (
