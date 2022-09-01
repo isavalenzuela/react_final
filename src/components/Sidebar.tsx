@@ -14,6 +14,7 @@ const Sidebar = () => {
       <NavLink to='/myskills' className="sidebar-link">
         My Skills
       </NavLink>
+      <footer className="app__footer">made with love 🖤 by <a href="https://www.linkedin.com/in/camila-isadora-valenzuela-fierro-a91921147/" className="app__footer__text">isavalenzuela</a></footer>
     </div>
   )
 }

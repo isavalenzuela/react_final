@@ -8,7 +8,7 @@ const Dashboard = () => {
         <h1>Hello, I'm Isa</h1>
         <div className='about-me'>
           <div className='about-me--container'>
-            <h3>About me</h3>
+            <h2>About me</h2>
             <img className='about-me--photo' src="foto.jpeg" alt="" />
           </div>
           <div className='about-me--desc'>My name is Camila Isadora Valenzuela Fierro
@@ -17,6 +17,10 @@ const Dashboard = () => {
             learn and work better when we make connections with others.
           </div>
           <div>This section is under construction 🛠</div>
+        </div>
+        <p className='contact-me--title'>Where to find me?</p>
+        <div className='contact-me--container'>
+          <p>You can click one of these buttons or, if you prefer, you can <a className='email-link' href="mailto: cami.valenzuela@uc.cl">send me an email.</a></p>
         </div>
       </div>
     </div>
