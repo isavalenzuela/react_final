@@ -16,7 +16,6 @@ const Dashboard = () => {
             I'm also a sociologist and as such, I believe we
             learn and work better when we make connections with others.
           </div>
-          <div>This section is under construction 🛠</div>
         </div>
         <p className='contact-me--title'>Where to find me?</p>
         <div className='contact-me--container'>

@@ -102,9 +102,11 @@
 }
 
 .about-me--desc {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 50px;
   text-align: justify;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-me--title {
@@ -188,7 +190,7 @@
   }
 
   .about-me--desc {
-    margin: 0px 10px;
+    margin: 0px 10px 10px 10px;
     text-align: justify;
   }
 
@@ -228,7 +230,7 @@
   }
 
   .about-me--desc {
-    margin-top: 0px;
+    margin: 0px 10px 10px 10px;
     text-align: justify;
   }
 
