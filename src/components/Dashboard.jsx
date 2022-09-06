@@ -20,9 +20,15 @@ const Dashboard = () => {
         <p className='contact-me--title'>Where to find me?</p>
         <div className='contact-me--container'>
           <p>You can click one of these buttons or, if you prefer, you can <a className='email-link' href="mailto: cami.valenzuela@uc.cl">send me an email.</a></p>
+          <a href="https://www.linkedin.com/in/camila-isadora-valenzuela-fierro-a91921147/" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+            <i className="bi bi-linkedin bi-style"></i>
+          </a>
+          <a href="https://github.com/isavalenzuela" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <i className="bi bi-github bi-style"></i>
+          </a>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
 

@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       <img className='larnu-logo' src='bootcamp.png' alt='logo'></img>
       <NavLink to='/' className="sidebar-link">
-        Dashboard
+        Home
       </NavLink>
       <NavLink to='/myprojects' className="sidebar-link">
         My Projects
